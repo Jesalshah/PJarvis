@@ -1,0 +1,8 @@
+Flask==1.1.1
+gunicorn==19.9.0
+numpy>=1.9.2
+pandas>=0.19
+pyttsx3>=2.90
+datetime>=4.3
+SpeechRecognition>=3.8.1
+wikipedia>=1.4.0

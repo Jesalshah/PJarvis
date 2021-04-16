@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+  <style>
+    h1 {text-align: center;}
+  </style>
+	<h1>Welcome to the Jarvis's world </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <style>
+        .container {
+          height: 20px;
+          position: relative;
+          border: 3px solid rgba(39, 23, 3, 0.719);
+        }
+        
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        </style>
+        
+        <div class="container">
+          <div class="center">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Speak</button>
+          </div>
+        </div>
+    </form>
+      <br>
+      <style>
+        .aligncenter {text-align: center;}
+      </style>
+      <div class="aligncenter">
+          <img src="static/Jarvis.PNG" width="500" height="600" >
+      </div>
+	
+   <br>
+   <br>
+ </div>
+
+
+</body>
+</html>
